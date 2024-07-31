@@ -1,0 +1,78 @@
+@media screen and (max-width: 576px) {
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .nav-bar_name,
+  .personal-img {
+    display: none;
+  }
+
+  .grid .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: max-content;
+  }
+
+  .grid .personal {
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 0.5fr;
+    width: 800px;
+  }
+  .grid .personal {
+    grid-template-areas:
+      "header1"
+      "header2"
+      "main1"
+      "main2"
+      "footer1 "
+      "footer2";
+    gap: 15px;
+  }
+  #skill,
+  #language,
+  #experience,
+  #activity,
+  #hobby,
+  #education {
+    margin: 0;
+    height: fit-content;
+  }
+  .grid .certificate {
+    grid-template-columns: 0.5fr;
+    height: max-content;
+  }
+
+  .cer1 img,
+  .cer2 img,
+  .cer3 img {
+    width: 400px;
+    height: 200px;
+  }
+  .cer1,
+  .cer2,
+  .cer3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cer2 {
+    padding: 0;
+  }
+  .cer3 {
+    border-bottom: 2px solid orange;
+  }
+  .cer2::before {
+    position: absolute;
+    content: "";
+    left: -7px;
+    height: 300px;
+    width: 2px;
+    background-color: rgb(245, 243, 240);
+  }
+  /* Dự án */
+  .self {
+    grid-template-columns: 1fr;
+    height: max-content;
+  }
+}
