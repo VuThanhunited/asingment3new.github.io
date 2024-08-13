@@ -35,7 +35,7 @@ function handleOnMouseOut(element) {
 }
 
 function handleViewMore(element) {
-  const parentElement = element.closest(".section-content");
+  const parentElement = element.closest(".container");
   const viewMore = parentElement.querySelector(".view-more");
   if (viewMore.innerHTML == "View more") {
     const sectionContent = parentElement.querySelectorAll(".content");

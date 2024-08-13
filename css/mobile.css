@@ -39,6 +39,8 @@
     margin: 0;
     height: fit-content;
   }
+  /* Chứng chỉ */
+  /* Đưa các chứng chỉ về trong một cột */
   .grid .certificate {
     grid-template-columns: 0.5fr;
     height: max-content;
@@ -59,9 +61,7 @@
   .cer2 {
     padding: 0;
   }
-  .cer3 {
-    border-bottom: 2px solid orange;
-  }
+
   .cer2::before {
     position: absolute;
     content: "";
@@ -70,9 +70,35 @@
     width: 2px;
     background-color: rgb(245, 243, 240);
   }
+  /* Đường kẻ phía dưới của từng chứng chỉ */
+  .certificate {
+    border-bottom: 2px solid #e19f43;
+  }
+  .grid-item {
+    position: relative;
+    padding: 20px;
+  }
+  .grid-item::after {
+    content: "";
+    position: absolute;
+    background-color: #e19f43;
+    z-index: 1;
+  }
+  .grid-item::after {
+    width: 100vw;
+    height: 2px;
+    left: -25px;
+    top: -1px;
+  }
+
   /* Dự án */
   .self {
     grid-template-columns: 1fr;
-    height: max-content;
+  }
+  table {
+    margin-top: 20px;
+  }
+  .project {
+    grid-template-columns: 1fr;
   }
 }

@@ -92,9 +92,18 @@
 
   /* Dự án */
   .self {
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    position: relative;
+    grid-template-columns: 0.3fr 1fr;
+    align-items: center;
+    top: 5px;
   }
   .self > p {
     margin: 0px;
+  }
+  .project-title {
+    font-size: medium;
+  }
+  .icon-lamp {
+    grid-area: 2 / 2;
   }
 }
